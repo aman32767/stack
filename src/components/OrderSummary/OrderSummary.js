@@ -16,7 +16,7 @@ return (
         <ul>
             {ingredientSummary}
         </ul>
-        <p className={classes.Success}><strong>Total Price - {props.price}</strong></p>
+        <p className={classes.Success}><strong>Total Price - {props.price} Rs</strong></p>
         <p>Continue to checkout??</p>
         <Button btnType="Danger" clicked={props.purchaseCancelled}>CANCEL</Button>
         <Button btnType="Success" clicked={props.purchaseContinue}>CONTINUE</Button>
