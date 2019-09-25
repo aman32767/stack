@@ -1,0 +1,14 @@
+.ContactData{
+    margin:20px 0;
+    width:80%;
+    text-align: center
+}
+.Input{
+    display:block
+}
+@media(min-width: 600px)
+{
+    .ContactData{
+        width:500px
+    }
+}
