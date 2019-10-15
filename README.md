@@ -1,1 +1,1 @@
-A Burger Builder
+A Burger purchasing app using react and redux
