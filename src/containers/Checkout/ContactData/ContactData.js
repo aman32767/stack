@@ -72,7 +72,8 @@ class ContactData extends Component {
         },
         value: '',
         validation: {
-          required: true
+          required: true,
+          isEmail:true
         },
         valid: false,
         touched: false
@@ -120,7 +121,10 @@ class ContactData extends Component {
     if (rules.maxLength) {
       isValid = value.length <= rules.maxLength && isValid;
     }
-
+    if (rules.isEmail) {
+      var pattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+      isValid = pattern.test(value) && isValid;
+    }
     return isValid;
   }
   inputChangeHandler = (event, inputIdentifier) => {
